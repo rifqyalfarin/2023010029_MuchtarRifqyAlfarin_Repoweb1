@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #6b6a6a;
+        }
+        img {
+            max-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Detail Mahasiswa</h2>
+    <div id="mahasiswaDetail">
+        <p>Pilih mahasiswa untuk melihat detailnya.</p>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('mahasiswa');
+        const details = {
+            1: {
+                name: 'Uciha Yanto',
+                description: 'TTL:Jepara,12 juli 2005. <br>Hobi: Bermain game, menggambar, dan belajar tentang teknologi.<br>keahlian:Programer WEB',
+                photo: 'img/jajal.png'
+                
+            },
+            2: {
+                name: 'NGATEMO',
+                description: 'TTL:Lampung,30 Maret 2004. <br>Hobi:Mancing,Sepakbola.<br>keahlian:Desainer',
+                photo: 'img/jajal.png'
+            },
+            3: {
+                name: 'JOKO',
+                description: 'TTL:Jogjakarta,21 Mei 2005. <br>Hobi:Tenis,Bersepeda.<br>keahlian:Teknisi',
+                photo: 'img/Screenshot (12).png'
+            }
+        };
+        if (id && details[id]) {
+            const detail = details[id];
+            document.getElementById('mahasiswaDetail').innerHTML = `
+                <h3>${detail.name}</h3>
+                <img src="${detail.photo}" alt="${detail.name}">
+                <p>${detail.description}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

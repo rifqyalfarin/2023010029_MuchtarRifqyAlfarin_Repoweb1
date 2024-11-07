@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+   <center>
+    <h1>Form Pendaftaran</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+            <option value="other">Lainnya</option>
+        </select><br><br>
+
+        <label for="address">Alamat:</label>
+        <textarea id="address" name="address" rows="2" required></textarea><br><br>
+
+        <label for="country">Negara:</label>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="photo">Foto:</label>
+        <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+        <label for="comments">Komentar:</label>
+        <textarea id="comments" name="comments" rows="6"></textarea><br><br>
+
+        <input type="submit" value="Kirim">
+    </form></center>
+</body>
+</html>

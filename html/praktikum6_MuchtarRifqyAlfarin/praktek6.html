@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Prodi RPL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .logo img {
+         width: 70px; /* Atur lebar gambar */
+        height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+        }
+
+
+        header {
+            background: #cfed28;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: rgb(17, 5, 5);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #091f39;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .friend-info {
+            display: none;
+            margin-top: 10px;
+        }
+        .kepala {
+            font: #091f39;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo_Politbang_png-259x300.png" alt="Logo_Politbang_png-259x300">
+        </div>
+        <CENter> <h1 style="color: rgb(64, 200, 64);">POLITEKNIK BALEKAMBANG</h1></CENter>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#vision">Visi & Misi</a>
+            <a href="https://www.example.com" target="_blank">Link Eksternal</a>
+            <a href="#contact">Form Kontak</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="content">
+           <U> <h2>Visi dan Misi Prodi RPL</h2></U>
+            <p>Visi Prodi RPL adalah menjadi program studi unggul yang menghasilkan lulusan berkualitas di bidang Rekayasa Perangkat Lunak.</p>
+            <p>Misi Prodi RPL meliputi pengembangan kurikulum yang relevan, peningkatan kualitas pengajaran, dan kerjasama dengan industri.</p>
+            <p>Nama Dosen Prodi RPL:Bpk. Indra Kurniawan, M.Kom.</p>
+        </div>
+        <aside class="sidebar">
+            <h3>Teman Satu Kelas</h3>
+            <ul>
+                <li><a href="#" onclick="showFriendInfo('kmbg')">kmbg</a></li>
+                <li><a href="#" onclick="showFriendInfo('sapuan')">sapuan</a></li>
+                <li><a href="#" onclick="showFriendInfo('ghoni')">ghoni</a></li>
+                <li><a href="#" onclick="showFriendInfo('naim')">naim</a></li>
+            </ul>
+            <div id="kmbg" class="friend-info">
+                <h4>kmbg</h4>
+                <img src="img/kmbg.jpeg" alt="kmbg" style="width:100px;">
+                <p>Hobi: Membaca dan bermain game.</p>
+            </div>
+            <div id="sapuan" class="friend-info">
+                <h4>sapuan</h4>
+                <img src="img/jajal.png" alt="jajal" style="width:100px;">
+                <p>Hobi: Olahraga dan menonton film.</p>
+            </div>
+            <div id="ghoni" class="friend-info">
+                <h4>ghoni</h4>
+                <img src="img/ghoni.jpeg" alt="ghoni" style="width:100px;">
+                <p>Hobi: Menggambar dan memasak.</p>
+            </div>
+            <div id="naim" class="friend-info">
+                <h4>naim</h4>
+                <img src="dina.jpg" alt="naim" style="width:100px;">
+                <p>Hobi: Menulis dan berkebun.</p>
+            </div>
+        </aside>
+    </main>
+    
+    <footer>
+        <img src="img/rif.jpeg" alt="rif" style="width: 50px;">
+        <p>[Muchtar Rifqy Alfarin]</p>
+        <p>Alamat Institusi: jl.kepel.....</p>
+    </footer>
+
+    <script>
+        function showFriendInfo(friend) {
+            const friends = document.querySelectorAll('.friend-info');
+            friends.forEach(f => f.style.display = 'none'); // Sembunyikan semua info
+            document.getElementById(friend).style.display = 'block'; // Tampilkan yang dipilih
+        }
+    </script>
+</body>
+</html>
