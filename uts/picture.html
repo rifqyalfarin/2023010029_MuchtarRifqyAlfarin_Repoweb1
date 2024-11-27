@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+        }
+        /* Gaya untuk tata letak ikon */
+        .icon-container {
+          display: flex;
+          justify-content: center;
+          gap: 20px; /* Jarak antar ikon */
+          flex-wrap: wrap; /* Jika layar kecil, ikon akan terbungkus ke baris berikutnya */
+          
+        }
+    
+        .icon-container a {
+          text-decoration: none; /* Menghilangkan garis bawah link */
+        }
+    
+        .icon-container img {
+          width: 100pt; /* Ukuran ikon */
+          height: 100pt;
+          border-radius: 10px; /* Membuat tepi gambar melengkung */
+          transition: transform 0.3s; /* Efek transisi saat hover */
+        }
+    
+        .icon-container img:hover {
+          transform: scale(1.1); /* Memperbesar ikon saat hover */
+        }
+      </style>
+    </head>
+    <body>
+      <h1>PICTURE</h1>
+      <div class="icon-container">
+        <a href="https://wa.me/qr/ATQTZHZMXKLOP1" target="_blank">
+          <img src="https://via.placeholder.com/100?text=whatsapp" alt="whatsapp">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://via.placeholder.com/100?text=Facebook" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/rifqyjpr/profilecard/?igsh=MTducHR4cnQ1eXYxYw==" target="_blank">
+          <img src="https://via.placeholder.com/100?text=Instagram" alt="Instagram">
+        </a>
+      </div>
+</body>
+</html>

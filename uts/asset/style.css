@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c7c2c2;
+    line-height: 1.6 ;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 1rem;
+}
+
+.textheader {
+    text-align:right;
+    margin-right: 670pt; /* Atur margin jika perlu */
+}
+
+
+.img-header {
+    align-items:flex-end;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+        object-fit:cover; /* Menjaga proporsi gambar */
+    }
+.login  {
+    text-align:left;
+    margin-left: 420pt;  
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    /* overflow: hidden; */
+    padding: 10px;
+    border-style: solid;
+    border-color: aquamarine;
+    background-color: aqua;
+}
+
+
+nav ul {
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+    background-color:rgb(67, 116, 212);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    padding: 10px ;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-image:url(img/bcg.jpg);
+    background-repeat: repeat;
+    padding: 130pt;
+}
+.putih{
+    color: aliceblue;
+}
+footer {
+    text-align:center;
+    background-color: #3333c4;
+    color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+}
+.border{
+    text-decoration: none;
+    border-style: solid;
+    border-color: rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
+   
+    transform: scale(1.1); /* Memperbesar ikon saat hover */
+}
+.sosmed{
+    width: 50%;
+}
