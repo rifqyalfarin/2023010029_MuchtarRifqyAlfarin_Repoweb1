@@ -71,7 +71,7 @@ nav ul li a:hover {
 main {
     background-image:url(img/bcg.jpg);
     background-repeat: repeat;
-    padding: 130pt;
+    padding: 100pt;
 }
 .putih{
     color: aliceblue;
@@ -95,7 +95,4 @@ footer {
     background-color: rgb(48, 48, 48);
    
     transform: scale(1.1); /* Memperbesar ikon saat hover */
-}
-.sosmed{
-    width: 50%;
 }
